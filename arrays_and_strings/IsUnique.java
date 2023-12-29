@@ -13,9 +13,10 @@ public class IsUnique {
             System.out.println("Usage: java IsUnique string");
             return;
         }
-        
-        System.out.printf("Using hash table: %s%n", solveWithHashTable(args[0]) ? "true" : "false");
-        System.out.printf("Using alg. with constant space complexity: %s%n", solveWithConstantSpace(args[0].toCharArray()) ? "true" : "false");
+
+        char[] string = args[0].toCharArray();
+        System.out.printf("Using hash table: %s%n", solveWithHashTable(string) ? "true" : "false");
+        System.out.printf("Using alg. with constant space complexity: %s%n", solveWithConstantSpace(string) ? "true" : "false");
     }
 
     private static void quickSort(char[] array) {
@@ -64,22 +65,19 @@ public class IsUnique {
     }
 
     /**
-     * This solution utilizes a hash table to store the number of occurences of each character of the string.
+     * This solution utilizes a hash table to store the information if the character was previously present.
      * Time complexity: O(n)
      * Space complexity: O(n)
      */
-    private static boolean solveWithHashTable(String string) {
-        Map<Character, Integer> characterCounts = new HashMap<>();
-        boolean isUnique = true;
+    private static boolean solveWithHashTable(char[] string) {
+        Map<Character, Boolean> isCharacterPresent = new HashMap<>();
 
-        for (var character : string.toCharArray()) {
-            int count = characterCounts.getOrDefault(character, 0);
-            if (0 != count) {
-                isUnique = false;
+        for (var character : string) {
+            if(isCharacterPresent.getOrDefault(character, false)) {
+                return false;
             }
-            characterCounts.put(character, ++count);
+            isCharacterPresent.put(character, true);
         }
-
-        return isUnique;
+        return true;
     }
 }
