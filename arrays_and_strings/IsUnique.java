@@ -15,8 +15,8 @@ public class IsUnique {
         }
 
         char[] string = args[0].toCharArray();
-        System.out.printf("Using hash table: %s%n", solveWithHashTable(string) ? "true" : "false");
-        System.out.printf("Using alg. with constant space complexity: %s%n", solveWithConstantSpace(string) ? "true" : "false");
+        System.out.printf("Using a hash table: %s%n", solveWithHashTable(string) ? "true" : "false");
+        System.out.printf("Using an algorithm with a constant space complexity: %s%n", solveWithConstantSpace(string) ? "true" : "false");
     }
 
     private static void quickSort(char[] array) {
