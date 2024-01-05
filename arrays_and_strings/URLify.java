@@ -16,7 +16,7 @@ public class URLify {
 
         char[] string = args[0].toCharArray();
         int trueLength = Integer.parseInt(args[1]);
-        int offsetMultiplier = (string.length - trueLength) / 2;
+        int offsetMultiplier = (string.length - trueLength) / URL_SPACE_ADDITIONAL_LENGTH;
 
         for (int i = trueLength - 1; 0 <= i; --i) {
             if (' ' == string[i]) {
