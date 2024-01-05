@@ -67,7 +67,7 @@ public class IsUnique {
     /**
      * This solution utilizes a hash table to store the information if the character was previously present.
      * Time complexity: O(n)
-     * Space complexity: O(n)
+     * Space complexity: O(1) - the map will be limited to the ASCII range of values
      */
     private static boolean solveWithHashTable(char[] string) {
         Map<Character, Boolean> isCharacterPresent = new HashMap<>();
