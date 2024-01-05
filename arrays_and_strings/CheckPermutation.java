@@ -63,7 +63,7 @@ public class CheckPermutation {
      * This solution maps each character of the string0 to its count, iterates through each character of the string1 and decreases its mapped count by 1.
      * Strings are equal if and only if each mapped character has a count of 0.
      * Time complexity: O(s)
-     * Space complexity: O(s)
+     * Space complexity: O(1) - the map will be limited to the ASCII range of values
      */
     private static boolean solveWithHashTable(char[] string0, char[] string1) {
         if (string0.length != string1.length) {
