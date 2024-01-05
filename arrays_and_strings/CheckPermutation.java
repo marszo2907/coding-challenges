@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Given two strings, write a method to decide if oe is a permutation of the other.
+ * Given two strings, write a method to decide if one is a permutation of the other.
  */
 public class CheckPermutation {
     private final static int EXPECTED_ARGS_LENGTH = 2;
@@ -39,7 +39,7 @@ public class CheckPermutation {
     }
 
     /**
-     * This solution calculates every possible permutation of the string0 and compares them to string1.
+     * This solution calculates every possible permutation of the string0 and compares them to the string1.
      * Time complexity: O(s * s!)
      * Space complexity: O(s!)
      */
