@@ -19,7 +19,7 @@ public class PalindromePermutation {
     }
 
     /**
-     * This solutions maps character of the string to their count and checks if the map contains at most one odd value.
+     * This solutions maps each character of the string to their count and checks if the map contains at most one odd value.
      * Time complexity: O(n)
      * Space complexity: O(1) - the map will be limited to at most 26 characters
      */
