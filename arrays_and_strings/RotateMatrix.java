@@ -1,3 +1,8 @@
+/**
+ * Given an image represented by an NxN matrix, where each pixel in the image is represented by an image,
+ * write a method to rotate the image by 90 degrees.
+ * Can you do this in place?
+ */
 public class RotateMatrix {
     private final static int EXPECTED_ARGS_LENGTH = 1;
     private final static int MAX_N = 9;
