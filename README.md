@@ -1,2 +1,2 @@
 # coding-challenges
-Coding challenges solutions
+Solutions to the coding challegnes found in "Cracking the Coding Interview"
