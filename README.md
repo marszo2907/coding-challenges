@@ -1,2 +1,2 @@
-# coding-challenges
-Solutions to the coding challegnes found in "Cracking the Coding Interview"
+# coding_challenges
+Solutions to the coding challegnes found in "Cracking the Coding Interview".
